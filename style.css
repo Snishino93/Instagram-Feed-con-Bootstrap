@@ -1,0 +1,11 @@
+.nav-link i {
+    color: black; /* color del icono por defecto */
+  }
+  
+  .nav-link.active i {
+    color: blue; /* color del icono del botón activo */
+  }
+  .col-4{
+    margin-left: -10px;
+  }
+  

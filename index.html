@@ -2,70 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Instagram</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Instagram</title>
 </head>
 
 <body>
+  <div class="container-fluid">
+    <!-- Navegador -->
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>Instagram</a>
-            <form class="d-flex">
-                <button class="btn btn-success rounded" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                    type="submit">Create a new post</button>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Create a new post</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                        placeholder="Add the captionof your post here"></textarea>
-                                </div>
-                                <a href="#" role="button" class="btn btn-ligth border popover-test" title="Popover title" data-bs-content="Popover body content is set in this attribute."><i class="fa-solid fa-camera"></i></a>
-                                
-                                <a href="#" role="button" class="btn btn-ligth border popover-test" title="Popover title" data-bs-content="Popover body content is set in this attribute."><i class="fa-solid fa-location-dot"></i></a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Publish</button>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container-fluid">
+        <a class="navbar-brand"><i class="fa-brands fa-instagram ms-5 pb-4"></i><span
+            class="ms-2 fw-bolder">Instagram</span></a>
+        <form class="d-flex">
+          <button class="btn btn-success rounded my-2 me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            type="button">Create a new post</button>
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa-solid fa-gear fa-inverse"></i>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
-                    </ul>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="FormControlTextarea" class="form-label fw-bolder">Caption:</label>
+                    <textarea class="form-control" id="FormControlTextarea" rows="2"
+                      placeholder="Add the captionof your post here"></textarea>
+                  </div>
+                  <a href="#" role="button" class="btn btn-ligth border popover-test" title="Popover title"
+                    data-bs-content="Popover body content is set in this attribute."><i
+                      class="fa-solid fa-camera"></i></a>
+
+                  <a href="#" role="button" class="btn btn-ligth border popover-test" title="Popover title"
+                    data-bs-content="Popover body content is set in this attribute."><i
+                      class="fa-solid fa-location-dot"></i></a>
                 </div>
-            </form>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Boton -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle my-2 me-5" data-bs-toggle="dropdown"
+              aria-expanded="false" style="outline: none;">
+              <i class="fa-solid fa-gear fa-inverse"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end me-5">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
     </nav>
-    <script src="https://kit.fontawesome.com/ec51ab7aa8.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- NAV-TAB -->
+    <div class="main">
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+      <!-- Primera -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row mb-2">
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_1280.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2019/10/17/13/56/rubber-duck-4556969_640.jpg" class="img-fluid"
+                alt="">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2017/09/22/21/37/random-2777166_1280.jpg" class="img-fluid"
+                alt="">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2015/08/18/02/15/ram-893259_640.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2017/06/12/16/35/bharat-2396074_640.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2016/01/19/16/55/pineapple-1149457_640.jpg" class="img-fluid"
+                alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2021/12/12/20/00/play-6865967_640.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2019/08/27/03/56/dice-4433289_640.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2014/12/16/21/06/poker-570697_640.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- Segunda -->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="post mt-5 border border-ligth col-4 mx-auto">
+            <div class="cabecero py-3">
+              <span class="fw-bolder ms-2">My Crazy Dices!</span>
+              <span class="dia float-end me-2" style="position: relative; top: -10px;">08/26</span>
+            </div>
+            <div class="foto">
+              <img src="https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_1280.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="ms-2">
+              <h5 class="fs-6 mt-2 mb-0 fw-bolder">204 Likes</h5>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+          <div class="post mt-5 border border-ligth col-4 mx-auto">
+            <div class="cabecero py-3">
+              <span class="fw-bolder ms-2">The greatness of Animal</span>
+              <span class="dia float-end me-2" style="position: relative; top: -10px;">04/09</span>
+            </div>
+            <div class="foto">
+              <img src="https://cdn.pixabay.com/photo/2019/10/17/13/56/rubber-duck-4556969_640.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="ms-2">
+              <h5 class="fs-6 mt-2 mb-0 fw-bolder">26985 Likes</h5>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+          <div class="post mt-5 border border-ligth col-4 mx-auto">
+            <div class="cabecero py-3">
+              <span class="fw-bolder ms-2">Amazing Nature!</span>
+              <span class="dia float-end me-2" style="position: relative; top: -10px;">06/10</span>
+            </div>
+            <div class="foto">
+              <img src="https://cdn.pixabay.com/photo/2017/09/22/21/37/random-2777166_1280.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="ms-2">
+              <h5 class="fs-6 mt-2 mb-0 fw-bolder">204 Likes</h5>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://kit.fontawesome.com/ec51ab7aa8.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
